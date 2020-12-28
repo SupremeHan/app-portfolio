@@ -117,6 +117,11 @@ const light = createMuiTheme({
           root: {
               zIndex: 9999
           }
+      },
+      MuiIconButton: {
+          root: {
+              color: '#1A1818'
+          }
       }
   }
 

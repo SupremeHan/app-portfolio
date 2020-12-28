@@ -4,7 +4,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import Link from 'next/link';
 
-const drawerWidth= "30%";
 
 const useStyles = makeStyles(theme => ({
     appBar: {
@@ -14,16 +13,26 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
     },
     drawerPaper: {
-        width: drawerWidth
+        width: '500px',
+        [theme.breakpoints.down('md')]: {
+            width: '350px'
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: '200px'
+        },
     },
     closeMenuButton: {
-        marginLeft: 'auto',
-        marginRight: 0,
+        position: 'absolute',
+        top: '20px',
+        right: '20px'
     },
     menuButton: {
         marginLeft: 'auto',
         marginRight: 0,
     },
+    list: {
+        marginTop: '70px'
+    }
 }));
 
 const Navbar = () => {
@@ -52,7 +61,6 @@ const Navbar = () => {
                      >
                        <MenuIcon
                        fontSize='large'
-                       style={{ color: "#CFC9D7" }}
                        />
                      </IconButton>
                 </Toolbar>
@@ -72,27 +80,27 @@ const Navbar = () => {
                 >
                     <IconButton fontSize="large" onClick={handleDrawerToggle} className={classes.closeMenuButton}>
                         <CloseIcon
-                         size="medium"
-                         style={{ color: "#CFC9D7" }}
+                         fontSize="large"
+                         color={'inherit'}
                         />
                     </IconButton>
                     <List className={classes.list}>
                         <Link href='/'>
-                            <ListItem button>
+                            <ListItem button onClick={handleDrawerToggle}>
                                 <ListItemText>
                                     index
                                 </ListItemText>
                             </ListItem>
                         </Link>
                         <Link href='/about'>
-                            <ListItem button>
+                            <ListItem button onClick={handleDrawerToggle}>
                                 <ListItemText>
                                     about
                                 </ListItemText>
                             </ListItem>
                         </Link>
                         <Link href='/projects'>
-                            <ListItem button>
+                            <ListItem button onClick={handleDrawerToggle}>
                                 <ListItemText>
                                     projects
                                 </ListItemText>

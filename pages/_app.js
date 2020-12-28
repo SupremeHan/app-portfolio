@@ -7,11 +7,23 @@ import theme from '../utils/theme';
 import light from '../utils/light';
 import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
-import { createMuiTheme, Switch } from '@material-ui/core';
+import { makeStyles, Switch } from '@material-ui/core';
+
+const useStyles = makeStyles(theme => ({
+    toggle: {
+      position: 'absolute',
+      top: '30px',
+      left: '20px'
+    },
+    switchBase: {
+      color: '#e64a4a',
+    }
+}));
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
   const [darkMode, setDarkMode] = useState(true);
+  const classes = useStyles();
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.
@@ -23,16 +35,25 @@ export default function MyApp(props) {
 
   return (
     <React.Fragment>
-      <Head>
-        <title>My page</title>
-        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-      </Head>
       <ThemeProvider theme={darkMode ? theme : light}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <Navbar/>
-        <Switch 
-        checked={darkMode} onChange={() => setDarkMode(!darkMode)}/>
+        <div className={classes.switch}>
+          <Switch 
+            checked={darkMode} 
+            onChange={() => setDarkMode(!darkMode)}
+            className={classes.toggle}
+            classes={{
+              root: classes.root,
+              switchBase: classes.switchBase,
+              thumb: classes.thumb,
+              track: classes.track,
+              checked: classes.checked,
+            }}
+            color="primary"
+          />
+        </div>
         <Component {...pageProps} />
         <Footer/>
       </ThemeProvider>

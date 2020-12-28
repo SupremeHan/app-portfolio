@@ -4,6 +4,9 @@ import React from 'react';
 const useStyles = makeStyles(theme => ({
     title: {
         height:'60vh',
+        [theme.breakpoints.down('xs')]: {
+           height: '70vh'
+        }
     },
     heading: {
         position: 'absolute',
@@ -11,9 +14,9 @@ const useStyles = makeStyles(theme => ({
         top: '25%',
         maxWidth: '768px',
         [theme.breakpoints.down('sm')]: {
-            maxWidth: '500px'
+            maxWidth: '300px'
         },
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('xs')]: {
             maxWidth: '200px'
         }
     },

@@ -136,6 +136,17 @@ const theme = createMuiTheme({
       MuiSwitch: {
           root: {
               zIndex: 9999,
+          },
+          colorPrimary: {
+                color: "#7D83FF !important"
+          },
+          track: {
+              background: "#cfc9d7 !important"
+          }
+      },
+      MuiIconButton: {
+          root: {
+              color: '#CFC9D7'
           }
       }
   }
