@@ -1,65 +1,51 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { Container } from '@material-ui/core'
+import Link from 'next/link'
+import Card from '../components/Card/card'
+import CardRev from '../components/CardRev/cardreverse'
+import Mouse from '../components/Mouse/mouse'
+import Title from '../components/Title/title'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+    <div>
+      <main>
+        <Title/>
+        <Mouse/>
+        <Container maxWidth="lg">
+        <Card
+          title="What i do"
+          description={`
+            Frontend developer based in Belgrade, Serbia
+              My story is not that long, i discovered programming 
+              in collage and fell in love with it, especially 
+              front end part as you can tell by my title. 
+              I mostly build websites and web apps using
+               ReactJs as my primary source. I also do some
+                backend stuff (if needed), with NodeJS 
+                (im using NestJS framework). You can check 
+                out some of my work here.
+          `}
+          img="/images/desktop.jpg"
+          link={<Link href='https://github.com/unicodeveloper/awesome-nextjs'><a>Git</a></Link>}
+        />
+        <CardRev
+          title="What i do"
+          description={`
+            Frontend developer based in Belgrade, Serbia
+              My story is not that long, i discovered programming 
+              in collage and fell in love with it, especially 
+              front end part as you can tell by my title. 
+              I mostly build websites and web apps using
+               ReactJs as my primary source. I also do some
+                backend stuff (if needed), with NodeJS 
+                (im using NestJS framework). You can check 
+                out some of my work here.
+          `}
+          img="/images/desktop.jpg"
+        />
+        </Container>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
