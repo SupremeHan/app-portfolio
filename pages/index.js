@@ -26,7 +26,6 @@ export default function Home() {
                 out some of my work here.
           `}
           img="/images/desktop.jpg"
-          link={<Link href='https://github.com/unicodeveloper/awesome-nextjs'><a>Git</a></Link>}
         />
         <CardRev
           title="What i do"

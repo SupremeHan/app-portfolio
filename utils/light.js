@@ -41,7 +41,7 @@ const light = createMuiTheme({
         fontSize: 60,
         color: PALETTE.text.primary,
         '@media (max-width:600px)': {
-                fontSize: '60px',
+                fontSize: '52px',
         },
         '@media (min-width:601px)': {
           fontSize: '70px',
@@ -65,7 +65,7 @@ const light = createMuiTheme({
         fontSize: 42,
         color: PALETTE.text.primary,
         '@media (max-width:600px)': {
-            fontSize: '26px',
+            fontSize: '22px',
         },
         '@media (min-width:601px)': {
             fontSize: '36px',

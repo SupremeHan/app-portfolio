@@ -54,7 +54,7 @@ const theme = createMuiTheme({
         fontSize: 110,
         color: PALETTE.text.primary,
         '@media (max-width:600px)': {
-                fontSize: '60px',
+                fontSize: '52px',
         },
         '@media (min-width:601px)': {
           fontSize: '70px',
@@ -69,9 +69,9 @@ const theme = createMuiTheme({
     h2: {
         fontFamily: FONT_FAMILY.primary,
         fontWeight: 600,
-        fontSize: 52,
+        fontSize: 32,
         color: PALETTE.text.primary,
-        '@media (max-width:600px)': {
+        '@media (min-width:350px)': {
             fontSize: '42px',
         },
     },
@@ -81,7 +81,7 @@ const theme = createMuiTheme({
         fontSize: 52,
         color: PALETTE.text.primary,
         '@media (max-width:600px)': {
-            fontSize: '26px',
+            fontSize: '22px',
         },
         '@media (min-width:601px)': {
             fontSize: '36px',
@@ -110,13 +110,14 @@ const theme = createMuiTheme({
     },
     body2: {
         fontFamily: FONT_FAMILY.secondary,
-        fontSize: 18,
+        fontSize: 12
+        ,
         fontWeight: 400,
-        '@media (max-width:600px)': {
-            fontSize: '12px',
+        '@media (min-width:350px)': {
+            fontSize: '14px',
         },
         '@media (min-width:601px)': {
-            fontSize: '14px'
+            fontSize: '16px'
         },
         '@media(min-width:1280px)': {
             fontSize: "18px"

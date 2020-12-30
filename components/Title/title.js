@@ -13,11 +13,7 @@ const useStyles = makeStyles(theme => ({
     },
     head: {
         '&:hover': {
-            fontSize: '0',
-            '&:after': {
-                content: 'attr(data-hover)',
-                fontSize: '3rem'
-            }
+            transition: 'all .4s cubic-bezier(0.2, 0.6, 0.2, 1)',
         }
     }
 }));
@@ -31,11 +27,14 @@ const Title = () => {
             <div className={classes.heading}>
                 <Typography 
                     variant="h1"
+                    className="animate__animated animate__fadeInLeft"
                 >
                     Hello<br/>I'm<br/>Nikola
                 </Typography>
-                <Typography variant="h3" className={classes.head}
-                    data-hover='UX/UI Designer'>
+                <Typography 
+                    variant="h3" 
+                    className="animate__animated animate__fadeInLeft animate__delay-1s"
+                >
                     Frontend Developer
                 </Typography>
             </div>

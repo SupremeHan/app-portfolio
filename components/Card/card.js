@@ -14,16 +14,18 @@ const useStyles = makeStyles(theme => ({
     },
     cardText: {
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        zIndex: 1,
     },
     cardImage: {
         display: 'flex',
         justifyContent: 'center',
+        
     },
     paper: {
         height: '400px',
         marginRight: '-20px',
-        zIndex: 1,
+        zIndex: 2,
         borderRadius: '5px',
         padding: '20px 30px',
         [theme.breakpoints.down('sm')]: {
@@ -33,7 +35,9 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('md')]: {
             height: '350px',
             maxWidth: '500px'
-        }
+        },
+        
+       
     },
     title: {
         padding: "20px 0px"
@@ -46,7 +50,11 @@ const Card = ({title, description, img, link}) => {
 
     return(
             <Grid container className={classes.card}>
-                <Grid 
+                <Grid
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                    data-aos-delay="70"
+                    data-aos-once="true" 
                     item xs={12} sm={10} md={5} 
                     className={classes.cardText}
                 >
@@ -59,6 +67,10 @@ const Card = ({title, description, img, link}) => {
                     </Paper>
                 </Grid>
                 <Grid 
+                    data-aos="zoom-in"
+                    data-aos-duration="2000"
+                    data-aos-delay="70"
+                    data-aos-once="true"
                     item xs={12} sm={10} md={5} 
                     className={classes.cardImage}
                 >

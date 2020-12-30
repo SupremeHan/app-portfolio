@@ -8,6 +8,8 @@ import light from '../utils/light';
 import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
 import { makeStyles, Switch } from '@material-ui/core';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 const useStyles = makeStyles(theme => ({
     toggle: {
@@ -31,6 +33,8 @@ export default function MyApp(props) {
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
+
+    Aos.init();
   }, []);
 
   return (

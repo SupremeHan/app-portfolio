@@ -47,7 +47,11 @@ const CardRev = ({title, description, img, link}) => {
 
     return(
             <Grid container className={classes.card}>
-                <Grid 
+                <Grid
+                    data-aos="zoom-in"
+                    data-aos-duration="2000"
+                    data-aos-delay="70"
+                    data-aos-once="true" 
                     item xs={12} sm={10} md={5} 
                     className={classes.cardImage}
                 >
@@ -59,6 +63,10 @@ const CardRev = ({title, description, img, link}) => {
                     />    
                 </Grid>
                 <Grid 
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                    data-aos-delay="70"
+                    data-aos-once="true"
                     item xs={12} sm={10} md={5} 
                     className={classes.cardText}
                 >

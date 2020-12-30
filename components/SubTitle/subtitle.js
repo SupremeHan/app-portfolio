@@ -14,10 +14,10 @@ const useStyles = makeStyles(theme => ({
         top: '25%',
         maxWidth: '768px',
         [theme.breakpoints.down('sm')]: {
-            maxWidth: '300px'
+            maxWidth: '500px'
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '200px'
+            maxWidth: '200px',
         }
     },
     headingText: {
