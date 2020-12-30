@@ -51,10 +51,6 @@ const Card = ({title, description, img, link}) => {
     return(
             <Grid container className={classes.card}>
                 <Grid
-                    data-aos="fade-right"
-                    data-aos-duration="2000"
-                    data-aos-delay="70"
-                    data-aos-once="true" 
                     item xs={12} sm={10} md={5} 
                     className={classes.cardText}
                 >
@@ -67,10 +63,6 @@ const Card = ({title, description, img, link}) => {
                     </Paper>
                 </Grid>
                 <Grid 
-                    data-aos="zoom-in"
-                    data-aos-duration="2000"
-                    data-aos-delay="70"
-                    data-aos-once="true"
                     item xs={12} sm={10} md={5} 
                     className={classes.cardImage}
                 >

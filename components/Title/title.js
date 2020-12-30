@@ -27,13 +27,20 @@ const Title = () => {
             <div className={classes.heading}>
                 <Typography 
                     variant="h1"
-                    className="animate__animated animate__fadeInLeft"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-once="true"
+                   // className="animate__animated animate__fadeInLeft"
                 >
                     Hello<br/>I'm<br/>Nikola
                 </Typography>
                 <Typography 
-                    variant="h3" 
-                    className="animate__animated animate__fadeInLeft animate__delay-1s"
+                    variant="h3"
+                    data-aos="fade-right"
+                    data-aos-delay="800"
+                    data-aos-duration="1000"
+                    data-aos-once="true"
+                   // className="animate__animated animate__fadeInLeft animate__delay-1s"
                 >
                     Frontend Developer
                 </Typography>
