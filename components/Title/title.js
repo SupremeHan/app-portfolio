@@ -35,7 +35,7 @@ const Title = () => {
                     Hello<br/>I'm<br/>Nikola
                 </Typography>
                 <Typography 
-                    variant="h3"
+                    variant="h4"
                     data-aos="fade-right"
                     data-aos-delay="800"
                     data-aos-duration="1000"

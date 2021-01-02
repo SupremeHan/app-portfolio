@@ -34,7 +34,11 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('md')]: {
             height: '350px',
             maxWidth: '500px'
-        }
+        },
+        [theme.breakpoints.down('xs')]: {
+            background: 'transparent',
+            boxShadow: 'none'
+        },
     },
     title: {
         padding: '20px 0px'
@@ -56,6 +60,7 @@ const CardRev = ({title, description, img, link}) => {
                         alt="Image"
                         width={500}
                         height={500}
+                        objectFit="cover"
                     />    
                 </Grid>
                 <Grid 

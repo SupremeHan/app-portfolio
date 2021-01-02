@@ -36,7 +36,10 @@ const useStyles = makeStyles(theme => ({
             height: '350px',
             maxWidth: '500px'
         },
-        
+        [theme.breakpoints.down('xs')]: {
+            background: 'transparent',
+            boxShadow: 'none'
+        },
        
     },
     title: {

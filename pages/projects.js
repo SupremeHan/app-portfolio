@@ -19,6 +19,15 @@ export default function About() {
                 img="/images/fitness.png"
                 link="https://github.com/SupremeHan/FitnessApp_Front_End"
             />
+            <Project
+                title="Movie Ticket App"
+                description={`Online booking application, reserve ticket, choose seats, and
+                be the first to watch all the best new movies`
+                }
+                tehnologies={['Html','Css','React','NodeJS', 'MySQL']}
+                img="/images/movie.png"
+                link="https://github.com/SupremeHan/FitnessApp_Front_End"
+            />
         </div>
     );
 }

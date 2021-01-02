@@ -63,15 +63,15 @@ const theme = createMuiTheme({
           fontSize: '90px',
         },
         '@media (min-width:1200px)': {
-          fontSize: '120px',
+          fontSize: '100px',
         },
     },
     h2: {
         fontFamily: FONT_FAMILY.primary,
         fontWeight: 600,
-        fontSize: 32,
-        color: PALETTE.text.primary,
-        '@media (min-width:350px)': {
+        fontSize: 52,
+        color: '#7D83FF',
+        '@media (max-width:600px)': {
             fontSize: '42px',
         },
     },
@@ -80,6 +80,20 @@ const theme = createMuiTheme({
         fontWeight: 700,
         fontSize: 52,
         color: PALETTE.text.primary,
+        '@media(min-width: 375px)': {
+            fontSize: '36px'
+        },
+        '@media (max-width:375px)': {
+          fontSize: '26px',
+        },
+        '@media (min-width:960px)': {
+          fontSize: '52px',
+        },
+    },
+    h4: {
+        fontFamily: FONT_FAMILY.primary,
+        fontWeight: 600,
+        fontSize: 30,
         '@media (max-width:600px)': {
             fontSize: '22px',
         },
@@ -90,11 +104,6 @@ const theme = createMuiTheme({
           fontSize: '42px',
         },
     },
-    h4: {
-        fontFamily: FONT_FAMILY.primary,
-        fontWeight: 600,
-        fontSize: 30
-    },
     h5: {
         fontFamily: FONT_FAMILY.primary,
         fontWeight: 600,
@@ -104,9 +113,7 @@ const theme = createMuiTheme({
         fontFamily: FONT_FAMILY.primary,
         fontSize: 40,
         fontWeight: 600,
-        '@media (max-width:600px)': {
-            fontSize: '22px',
-        },
+        
     },
     body2: {
         fontFamily: FONT_FAMILY.secondary,
@@ -123,6 +130,21 @@ const theme = createMuiTheme({
             fontSize: "18px"
         }
     },
+    caption: {
+            fontFamily: FONT_FAMILY.secondary,
+            fontWeight: 400,
+            fontSize: 24,
+            lineHeight: 1.25,
+            '@media(max-width:768px)': {
+                fontSize: "22px"
+            },
+            '@media(max-width:600px)': {
+                fontSize: "14px"
+            },
+            '@media(max-width:375px)': {
+                fontSize: "12px"
+            }
+        },
     button: {
         color: PALETTE.text.primary
     }

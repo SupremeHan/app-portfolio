@@ -5,7 +5,9 @@ import Link from 'next/link';
 
 const useStyles = makeStyles(theme => ({
     project: {
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginBottom: '70px',
+        marginTop: '70px'
     },
     projectText: {
         maxWidth: '500px',
@@ -14,6 +16,13 @@ const useStyles = makeStyles(theme => ({
     projectHeading: {
         display: 'flex',
         padding: '20px 0px',
+    },
+    projectImage: {
+        display: 'flex',
+        alignItems: 'center'
+    },
+    image: {
+        border: '1px solid black !important'
     },
     bar: {
         display: 'block',
@@ -75,29 +84,31 @@ const Project = ({title, description, tehnologies, img, link}) => {
                 md={5} lg={4} xl={3} 
                 item className={classes.projectText}
             >
-                <div className={classes.projectHeading}>
+               
                     <Typography variant="h4" className={classes.title}>
                         {title}
                     </Typography>
-                    <Link href={link}>
-                    <Image
-                        src="/images/git.jpg"
-                        alt="GitCat"
-                        width={50}
-                        height={40}
-                        objectFit="fill"
-                        className={classes.link}
-                    />
-                    </Link>
-                </div>
+               
                
                 <Typography variant="body2">
                     {description}
                 </Typography>
                 <div className={classes.projectTech}>
+                     <div className={classes.projectHeading}>
                     <Typography variant="h5" className={classes.projectTechText}>
                         Tehnologies
                     </Typography>
+                    <Link href={link}>
+                    <Image
+                        src="/images/git.jpg"
+                        alt="GitCat"
+                        width={70}
+                        height={40}
+                        objectFit="fill"
+                        className={classes.link}
+                    />
+                    </Link>
+                     </div>
                     <Typography variant="body2">
                         {tehnologies.join(', ')}
                     </Typography>
@@ -118,6 +129,7 @@ const Project = ({title, description, tehnologies, img, link}) => {
                         alt="Image"
                         width={500}
                         height={300}
+                        className={classes.image}
                     />    
                 </div>    
             </Grid>

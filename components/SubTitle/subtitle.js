@@ -36,7 +36,7 @@ const Subtitle = ({ heading, subHeading }) => {
                 <Typography variant="h1" className={classes.headingText}>
                     {heading}
                 </Typography>
-                <Typography variant="h3">
+                <Typography variant="h4">
                     {subHeading}
                 </Typography>
             </div>
