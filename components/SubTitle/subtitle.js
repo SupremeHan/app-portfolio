@@ -13,16 +13,35 @@ const useStyles = makeStyles(theme => ({
         left: '15%',
         top: '25%',
         maxWidth: '768px',
+         '& span': {
+        display: 'inline-block',
+        transform: 'translateY(30px)',
+        opacity: 0,
+        animation: '1s ease 0.2s 1 normal forwards running $span',
+        },
         [theme.breakpoints.down('sm')]: {
             maxWidth: '500px'
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '200px',
+            maxWidth: '300px',
         }
     },
     headingText: {
         paddingBottom: "10px"
-    }
+    },
+    '@keyframes span': {
+        '0%': {
+            opacity: 0,
+            transform: 'translateY(30px)'
+        },
+        "100%": {
+            opacity: 1,
+            transform: 'translateY(0px)'
+        }
+    },
+    delay: {
+        animationDelay: '0.5s !important'
+    },
 }));
 
 
@@ -34,10 +53,10 @@ const Subtitle = ({ heading, subHeading }) => {
         <div className={classes.title}>
             <div className={classes.heading}>
                 <Typography variant="h1" className={classes.headingText}>
-                    {heading}
+                    <span>{heading}</span>
                 </Typography>
                 <Typography variant="h4">
-                    {subHeading}
+                    <span className={classes.delay}>{subHeading}</span> 
                 </Typography>
             </div>
         </div>
