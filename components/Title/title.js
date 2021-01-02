@@ -28,6 +28,7 @@ const Title = () => {
                 <Typography 
                     variant="h1"
                     data-aos="fade-right"
+                    data-aos-delay="1000"
                     data-aos-duration="1000"
                     data-aos-once="true"
                    // className="animate__animated animate__fadeInLeft"
@@ -37,7 +38,7 @@ const Title = () => {
                 <Typography 
                     variant="h4"
                     data-aos="fade-right"
-                    data-aos-delay="800"
+                    data-aos-delay="1500"
                     data-aos-duration="1000"
                     data-aos-once="true"
                    // className="animate__animated animate__fadeInLeft animate__delay-1s"

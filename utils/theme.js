@@ -113,11 +113,13 @@ const theme = createMuiTheme({
         fontFamily: FONT_FAMILY.primary,
         fontSize: 40,
         fontWeight: 600,
-        
+        '@media (max-width:600px)': {
+            fontSize: '32px',
+        },
     },
     body2: {
         fontFamily: FONT_FAMILY.secondary,
-        fontSize: 12
+        fontSize: 14
         ,
         fontWeight: 400,
         '@media (min-width:350px)': {
