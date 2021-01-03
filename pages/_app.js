@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../utils/theme';
@@ -8,8 +7,7 @@ import light from '../utils/light';
 import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
 import { makeStyles, Switch } from '@material-ui/core';
-import Aos from 'aos';
-import "aos/dist/aos.css";
+
 
 const useStyles = makeStyles(theme => ({
     toggle: {
@@ -33,8 +31,6 @@ export default function MyApp(props) {
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
-
-    Aos.init();
   }, []);
 
   return (
