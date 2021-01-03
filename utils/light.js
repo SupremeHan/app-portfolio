@@ -58,8 +58,8 @@ const light = createMuiTheme({
         fontWeight: 500,
         fontSize: 32,
         color: PALETTE.text.primary,
-        '@media (max-width:600px)': {
-            fontSize: '42px',
+         '@media (max-width:600px)': {
+            fontSize: '38px',
         },
     },
     h3: {
@@ -67,11 +67,14 @@ const light = createMuiTheme({
         fontWeight: 700,
         fontSize: 52,
         color: PALETTE.text.primary,
-         '@media (min-width:960px)': {
-          fontSize: '52px',
+        '@media(min-width: 375px)': {
+            fontSize: '36px'
         },
         '@media (max-width:375px)': {
           fontSize: '26px',
+        },
+        '@media (min-width:960px)': {
+          fontSize: '52px',
         },
     },
     h4: {
@@ -95,18 +98,21 @@ const light = createMuiTheme({
     },
     body1: {
         fontFamily: FONT_FAMILY.primary,
-        fontSize: 40,
-        fontWeight: 600
+        fontSize: 52,
+        fontWeight: 600,
+        '@media (max-width:600px)': {
+            fontSize: '32px',
+        },
     },
     body2: {
         fontFamily: FONT_FAMILY.primary,
         fontSize: 18,
         fontWeight: 300,
-        '@media (max-width:600px)': {
-            fontSize: '12px',
+        '@media (min-width:350px)': {
+            fontSize: '14px',
         },
         '@media (min-width:601px)': {
-            fontSize: '14px'
+            fontSize: '16px'
         },
         '@media(min-width:1280px)': {
             fontSize: "18px"

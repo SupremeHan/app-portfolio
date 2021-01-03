@@ -22,14 +22,14 @@ const useStyles = makeStyles(theme => ({
         alignItems: 'center'
     },
     image: {
-        border: '1px solid black !important'
+        border: '1px solid #ddd !important'
     },
     bar: {
         display: 'block',
         position: 'relative',
         height: '24px',
         width: '100%',
-        maxWidth: '500px',
+        maxWidth: '600px',
         backgroundColor: '#ddd',
         '& i': {
         height: '12px',
@@ -60,13 +60,14 @@ const useStyles = makeStyles(theme => ({
         },
     },
      projectTech: {
-        padding: '20px 0px'
+        padding: '10px 0px'
     },
     projectTechText: {
         padding: '15px 0px'
     },
     title: {
-        paddingRight: '20px'
+        paddingRight: '20px',
+        marginBottom: '10px'
     },
     link: {
         '&:hover': {
@@ -84,12 +85,9 @@ const Project = ({title, description, tehnologies, img, link}) => {
                 md={5} lg={4} xl={3} 
                 item className={classes.projectText}
             >
-               
-                    <Typography variant="h4" className={classes.title}>
-                        {title}
-                    </Typography>
-               
-               
+                <Typography variant="h4" className={classes.title}>
+                    {title}
+                </Typography>
                 <Typography variant="body2">
                     {description}
                 </Typography>
@@ -100,10 +98,10 @@ const Project = ({title, description, tehnologies, img, link}) => {
                     </Typography>
                     <Link href={link}>
                     <Image
-                        src="/images/git.jpg"
+                        src="/images/git.png"
                         alt="GitCat"
                         width={70}
-                        height={40}
+                        height={30}
                         objectFit="fill"
                         className={classes.link}
                     />
@@ -127,8 +125,9 @@ const Project = ({title, description, tehnologies, img, link}) => {
                     <Image
                         src={img}
                         alt="Image"
-                        width={500}
+                        width={600}
                         height={300}
+                        objectFit="cover"
                         className={classes.image}
                     />    
                 </div>    

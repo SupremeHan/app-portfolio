@@ -1,6 +1,7 @@
 import { Grid, makeStyles, Paper, Typography } from '@material-ui/core';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const useStyles = makeStyles(theme => ({
     card: {
@@ -42,11 +43,14 @@ const useStyles = makeStyles(theme => ({
     },
     title: {
         padding: '20px 0px'
+    },
+    link: {
+        textDecoration: 'underline'
     }
 }));
 
 
-const CardRev = ({title, description, img, link}) => {
+const CardRev = ({title, description, img}) => {
     const classes = useStyles();
 
     return(
@@ -70,9 +74,9 @@ const CardRev = ({title, description, img, link}) => {
                     <Paper className={classes.paper}>
                     <Typography variant="h2" className={classes.title}>{title}</Typography>
                     <Typography variant="body2">{description}</Typography>
-                    <div>
-                        <p>{link}</p>
-                    </div>
+                    <Link href='/projects'>
+                        <p className={classes.link}>Projects</p>
+                    </Link>
                     </Paper>
                 </Grid>  
             </Grid>

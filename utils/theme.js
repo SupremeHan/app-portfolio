@@ -69,10 +69,10 @@ const theme = createMuiTheme({
     h2: {
         fontFamily: FONT_FAMILY.primary,
         fontWeight: 600,
-        fontSize: 52,
+        fontSize: 46,
         color: '#7D83FF',
         '@media (max-width:600px)': {
-            fontSize: '42px',
+            fontSize: '38px',
         },
     },
     h3: {
@@ -111,7 +111,7 @@ const theme = createMuiTheme({
     },
     body1: {
         fontFamily: FONT_FAMILY.primary,
-        fontSize: 40,
+        fontSize: 52,
         fontWeight: 600,
         '@media (max-width:600px)': {
             fontSize: '32px',

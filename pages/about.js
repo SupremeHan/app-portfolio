@@ -18,22 +18,20 @@ export default function About() {
                     text={`
                         Besiedes programming i also have some other 
                         interestes, such as photography and videography.
-                         I found myself taking photos and recording since 
-                         i was a kid (i still remeber my first kodak). 
-                         Now i do some more serious stuff using adobe 
-                         Lightroom and Adobe Premier Pro.
+                        I love taking photos and recording stuff ever since i was a kid.
+                        I also have some intermediate knowledge of Adobe Premier and Adobe Lightroom.
                     `}
                     img="/images/photo.jpg"
                 />
                 <AboutCard
                     title="Lifting Stuff"
                     text={`
-                        I also do Crossfit on the regular baises. 
+                        I also do Crossfit on the regular basis. 
                         If you don’t find my sitting at my desk and 
-                        yelling at my screen because my code wont work.
+                        yelling at my screen because my code won't work.
                          I’ll probably be at my local box throwing weights 
                          aroud the gym. I also plan to compete so 
-                         if you come to any local competition you may find me there.
+                         if you come to any local competitions you may find me there.
                     `}
                     img="/images/crossfit.jpg"
                 />
