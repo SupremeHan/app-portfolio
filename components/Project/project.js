@@ -113,7 +113,7 @@ const Project = ({title, description, tehnologies, img, link}) => {
                 </div>
             </Grid>
             <Grid 
-                md={5} lg={4} xl={3} 
+                xs={11} md={5} lg={4} xl={3} 
                 item className={classes.projectImage}
             >
                  <div className={classes.itemImage}>
