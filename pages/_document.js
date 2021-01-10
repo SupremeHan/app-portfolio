@@ -10,6 +10,10 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
+          <meta
+            name="description"
+            content="Front End Developer based in Belgrade, Serbia."
+          />
           <link
             rel="preload"
             href="/fonts/Metropolis-Black.otf"
@@ -18,6 +22,7 @@ export default class MyDocument extends Document {
           />
           <link rel="preconnect" href="https://fonts.gstatic.com"/>
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet"/>
+          <title>Nikola Zivojinovic | Front End Developer</title>
         </Head>
         <body>
           <Main />

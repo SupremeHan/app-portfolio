@@ -4,12 +4,11 @@ import React from 'react';
 const useStyles = makeStyles(theme => ({
     title: {
         height: '100vh',
+        maxWidth: '960px',
     },
     heading: {
-        position: 'absolute',
-        left: '15%',
+        position: 'relative',
         top: '25%',
-        maxWidth: '960px',
         '& span': {
         display: 'inline-block',
         transform: 'translateY(30px)',
@@ -18,14 +17,8 @@ const useStyles = makeStyles(theme => ({
         },
     },
     delay: {
-        animationDelay: '0.5s !important'
+        animationDelay: '0.5s !important',
     },
-    head: {
-        '&:hover': {
-            transition: 'all .4s cubic-bezier(0.2, 0.6, 0.2, 1)',
-        }
-    },
-    
     '@keyframes span': {
         '0%': {
             opacity: 0,
@@ -34,6 +27,12 @@ const useStyles = makeStyles(theme => ({
         "100%": {
             opacity: 1,
             transform: 'translateY(0px)'
+        }
+    },
+    headingText: {
+        padding: '0px 100px',
+        [theme.breakpoints.down('sm')]: {
+            padding: '0px 50px'
         }
     }
 }));
@@ -47,12 +46,14 @@ const Title = () => {
             <div className={classes.heading}>
                 <Typography 
                     variant="h1"
+                    className={classes.headingText}
                    // className="animate__animated animate__fadeInLeft"
                 >
                    <span>Hello<br/>I'm<br/>Nikola</span>
                 </Typography>
                 <Typography 
                     variant="h4"
+                     className={classes.headingText}
                    // className="animate__animated animate__fadeInLeft animate__delay-1s"
                 >
                     <span className={classes.delay}>Frontend Developer</span>

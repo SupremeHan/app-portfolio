@@ -4,15 +4,15 @@ import React from 'react';
 const useStyles = makeStyles(theme => ({
     title: {
         height:'60vh',
+        maxWidth: '960px',
         [theme.breakpoints.down('xs')]: {
            height: '70vh'
         }
     },
     heading: {
-        position: 'absolute',
-        left: '15%',
-        top: '25%',
-        maxWidth: '768px',
+        position: 'relative',
+        top: '40%',
+        left: '10%',
          '& span': {
         display: 'inline-block',
         transform: 'translateY(30px)',

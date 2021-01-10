@@ -14,24 +14,41 @@ const useStyles = makeStyles(theme => ({
        position: 'relative',
        maxWidth: '768px'
    },
-   aboutText: {
+   aboutItem: {
+       marginTop: '20px',
+       [theme.breakpoints.down('xs')]: {
+            marginTop: '20px',
+       }
+   },
+    aboutText: {
        position: 'absolute',
        left: "10%",
        top: "10%",
        right: "10%",
+      '& span': {
+        display: 'inline-block',
+        transform: 'translateY(30px)',
+        opacity: 0,
+        animation: '1s ease 0.2s 1 normal forwards running $span',
+        },
    },
+   '@keyframes span': {
+        '0%': {
+            opacity: 0,
+            transform: 'translateX(-30px)'
+        },
+        "100%": {
+            opacity: 1,
+            transform: 'translateX(0px)'
+        }
+    },
+
    aboutHeading: {
        marginBottom: '30px',
        [theme.breakpoints.down('xs')]: {
            marginBottom: '10px'
        }
    },
-   aboutItem: {
-       marginTop: '20px',
-       [theme.breakpoints.down('xs')]: {
-            marginTop: '20px',
-       }
-   }
 }));
 
 export default function AboutCard({img, title, text}) {
@@ -50,16 +67,12 @@ export default function AboutCard({img, title, text}) {
                             className={classes.aboutImage}    
                         />
                         <div 
-                         data-aos="zoom-in"
-                         data-aos-delay="500"
-                         data-aos-duration="1000"
-                         data-aos-once="true"
                          className={classes.aboutText}>
                             <Typography variant="h3" className={classes.aboutHeading}>
-                                {title}
+                                <span>{title}</span>
                             </Typography>
                             <Typography variant="caption">
-                                {text}
+                                <span>{text}</span>
                             </Typography>
                         </div>
                     </div>

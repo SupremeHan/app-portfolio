@@ -30,6 +30,9 @@ const PALETTE = {
     secondary: {
         main: '#69f0ae',
     },
+    success: {
+        main: '#CFC9D7',
+    },
     text: {
         primary: '#CFC9D7',
         secondary: '#000',
@@ -74,6 +77,12 @@ const theme = createMuiTheme({
         '@media (max-width:600px)': {
             fontSize: '38px',
         },
+        '@media (max-width:960px)': {
+            fontSize: '40px',
+        },
+        '@media (max-width:1200px)': {
+            fontSize: '42px',
+        },
     },
     h3: {
         fontFamily: FONT_FAMILY.primary,
@@ -94,6 +103,7 @@ const theme = createMuiTheme({
         fontFamily: FONT_FAMILY.primary,
         fontWeight: 600,
         fontSize: 30,
+        color: '#7D83FF',
         '@media (max-width:600px)': {
             fontSize: '22px',
         },
@@ -119,17 +129,17 @@ const theme = createMuiTheme({
     },
     body2: {
         fontFamily: FONT_FAMILY.secondary,
-        fontSize: 14
-        ,
+        fontSize: 14,
+        lineHeight: 1.5,
         fontWeight: 400,
         '@media (min-width:350px)': {
-            fontSize: '14px',
+            fontSize: '16px',
         },
         '@media (min-width:601px)': {
-            fontSize: '16px'
+            fontSize: '18px'
         },
         '@media(min-width:1280px)': {
-            fontSize: "18px"
+            fontSize: "20px"
         }
     },
     caption: {

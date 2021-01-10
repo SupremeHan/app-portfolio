@@ -18,6 +18,9 @@ const PALETTE = {
     secondary: {
         main: '#69f0ae',
     },
+    success: {
+        main: '#1A1818',
+    },
     text: {
         primary: '#1A1818',
         secondary: '#000',
@@ -81,6 +84,7 @@ const light = createMuiTheme({
         fontFamily: FONT_FAMILY.primary,
         fontWeight: 600,
         fontSize: 30,
+        color: '#e64a4a',
         '@media (max-width:600px)': {
             fontSize: '22px',
         },
@@ -152,7 +156,8 @@ const light = createMuiTheme({
           root: {
               color: '#1A1818'
           }
-      }
+      },
+     
   }
 
 });

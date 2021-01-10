@@ -7,12 +7,11 @@ import Subtitle from '../components/SubTitle/subtitle';
 
 export default function About() {
     return(
-        <div>
-            <Subtitle
-                heading="Since your here"
-                subHeading="Learn something more about me"
-            />
             <Container maxWidth='lg'>
+                 <Subtitle
+                    heading="Since your here"
+                    subHeading="Learn something more about me"
+                />
                 <AboutCard
                     title="Shot taker"
                     text={`
@@ -36,6 +35,5 @@ export default function About() {
                     img="/images/crossfit.jpg"
                 />
             </Container>
-        </div>
     );
 }

@@ -42,10 +42,22 @@ const useStyles = makeStyles(theme => ({
         },
     },
     title: {
-        padding: '20px 0px'
+        padding: '30px 20px',
+        [theme.breakpoints.down('md')]: {
+            padding: '10px 20px'
+        }
+    },
+    description: {
+        padding: '0px 20px'
     },
     link: {
-        textDecoration: 'underline'
+        textDecoration: 'underline',
+        paddingLeft: '20px'
+    },
+    image: {
+        maxWidth: '100%',
+        height: 'auto',
+        borderRadius: '5px'
     }
 }));
 
@@ -64,7 +76,7 @@ const CardRev = ({title, description, img}) => {
                         alt="Image"
                         width={500}
                         height={500}
-                        objectFit="cover"
+                        className={classes.image}
                     />    
                 </Grid>
                 <Grid 
@@ -73,7 +85,7 @@ const CardRev = ({title, description, img}) => {
                 >
                     <Paper className={classes.paper}>
                     <Typography variant="h2" className={classes.title}>{title}</Typography>
-                    <Typography variant="body2">{description}</Typography>
+                    <Typography variant="body2" className={classes.description}>{description}</Typography>
                     <Link href='/projects'>
                         <p className={classes.link}>Projects</p>
                     </Link>

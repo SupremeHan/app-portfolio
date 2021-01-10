@@ -1,14 +1,17 @@
+import { Container } from '@material-ui/core';
 import React from 'react';
 import Project from '../components/Project/project';
 import Subtitle from '../components/SubTitle/subtitle';
 
 export default function About() {
     return(
-        <div>
+        <>
+        <Container maxWidth="lg">
             <Subtitle
                 heading="Projects"
                 subHeading="Some personal some done for other clients"
             />
+        </Container>
             <Project
                 title="Fitness App"
                 description={`Fitness platform created as a part of collage project.
@@ -60,6 +63,6 @@ export default function About() {
                 img="/images/projects/foodAngular.jpg"
                 link="https://github.com/SupremeHan/Food-App-Angular"
             />
-        </div>
+        </>
     );
 }

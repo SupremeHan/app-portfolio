@@ -34,7 +34,7 @@ export default function MyApp(props) {
   }, []);
 
   return (
-    <React.Fragment>
+    <React.Fragment >
       <ThemeProvider theme={darkMode ? theme : light}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />

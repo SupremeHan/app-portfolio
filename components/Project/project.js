@@ -1,4 +1,4 @@
-import { Grid, makeStyles, Typography } from '@material-ui/core';
+import { Grid, makeStyles, Paper, Typography } from '@material-ui/core';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
     project: {
         justifyContent: 'center',
         marginBottom: '70px',
-        marginTop: '70px'
+        marginTop: '70px',
     },
     projectText: {
         maxWidth: '500px',
@@ -19,7 +19,11 @@ const useStyles = makeStyles(theme => ({
     },
     projectImage: {
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center'
+        },
+        
     },
     image: {
         border: '1px solid #ddd !important'
@@ -73,7 +77,8 @@ const useStyles = makeStyles(theme => ({
         '&:hover': {
             cursor: 'pointer'
         }
-    }
+    },
+    
 }));
 
 const Project = ({title, description, tehnologies, img, link}) => {
@@ -82,7 +87,7 @@ const Project = ({title, description, tehnologies, img, link}) => {
     return(
         <Grid container className={classes.project}>
             <Grid 
-                md={5} lg={4} xl={3} 
+                md={5} lg={4} 
                 item className={classes.projectText}
             >
                 <Typography variant="h4" className={classes.title}>
@@ -113,15 +118,16 @@ const Project = ({title, description, tehnologies, img, link}) => {
                 </div>
             </Grid>
             <Grid 
-                xs={11} md={5} lg={4} xl={3} 
+                xs={11} md={5} lg={4} 
                 item className={classes.projectImage}
             >
-                 <div className={classes.itemImage}>
+                 <div >
                     <div className={classes.bar}>
                         <i></i>
                         <i></i>
                         <i></i>
                     </div>
+                    <div className={classes.itemImage}>
                     <Image
                         src={img}
                         alt="Image"
@@ -130,6 +136,8 @@ const Project = ({title, description, tehnologies, img, link}) => {
                         objectFit="cover"
                         className={classes.image}
                     />    
+                    </div>
+                    
                 </div>    
             </Grid>
         </Grid>
