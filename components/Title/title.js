@@ -15,6 +15,9 @@ const useStyles = makeStyles(theme => ({
         opacity: 0,
         animation: '1s ease 0.2s 1 normal forwards running $span',
         },
+        [theme.breakpoints.down('xs')]: {
+            top: '20%'
+        },
     },
     headingText: {
         padding: '0px 100px',
