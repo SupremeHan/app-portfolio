@@ -16,7 +16,7 @@ const Footer = () => {
 
     return(
         <div className={classes.footer}>
-            <Typography variant='body2'>Nikola Zivojinovic © 2021</Typography>
+            <Typography variant='body2'>Nikola Živojinović © 2021</Typography>
         </div>
     );
 }

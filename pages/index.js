@@ -1,6 +1,7 @@
 import { Container } from '@material-ui/core'
 import Card from '../components/Card/card'
 import CardRev from '../components/CardRev/cardreverse'
+import Contact from '../components/Contact/contact'
 import Mouse from '../components/Mouse/mouse'
 import Title from '../components/Title/title'
 
@@ -33,14 +34,7 @@ export default function Home() {
             `}
             img="/images/mern.jpg"
           />
-          <Card
-            title="Get in touch with me"
-            description={`
-              You can reach out to me on my social media or you can just send me an email whichever you prefer.
-            `}
-            img="/images/contactus.jpg"
-
-          />
+          <Contact/>
         </Container>
       </main>
 

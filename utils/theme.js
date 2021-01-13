@@ -40,8 +40,10 @@ const PALETTE = {
         hint: '#FFF'
     },
     background: {
-        paper: '#323031',
-        default: '#1A1818',
+        //paper: '#323031',
+        paper: '#1F1F23',
+        //default: '#1A1818',
+        default: '#0E0E10',
         secondary: '#F5F5F5',
     },
 };
@@ -65,9 +67,7 @@ const theme = createMuiTheme({
         '@media (min-width:960px)': {
           fontSize: '90px',
         },
-        '@media (min-width:1200px)': {
-          fontSize: '100px',
-        },
+      
     },
     h2: {
         fontFamily: FONT_FAMILY.primary,
@@ -96,7 +96,7 @@ const theme = createMuiTheme({
           fontSize: '26px',
         },
         '@media (min-width:960px)': {
-          fontSize: '52px',
+          fontSize: '62px',
         },
     },
     h4: {
@@ -105,7 +105,7 @@ const theme = createMuiTheme({
         fontSize: 30,
         color: '#7D83FF',
         '@media (max-width:600px)': {
-            fontSize: '22px',
+            fontSize: '26px',
         },
         '@media (min-width:601px)': {
             fontSize: '36px',
@@ -126,6 +126,9 @@ const theme = createMuiTheme({
         '@media (max-width:600px)': {
             fontSize: '32px',
         },
+        '&:hover': {
+            color: '#7D83FF',
+        }
     },
     body2: {
         fontFamily: FONT_FAMILY.secondary,
@@ -183,7 +186,7 @@ const theme = createMuiTheme({
           root: {
               color: '#CFC9D7'
           }
-      }
+      },
   }
 });
 

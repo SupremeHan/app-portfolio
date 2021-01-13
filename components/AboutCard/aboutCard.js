@@ -5,7 +5,10 @@ import Image  from 'next/image';
 const useStyles = makeStyles(theme => ({
    about: {
        justifyContent: 'center',
-       marginTop: '100px'
+       marginTop: '100px',
+       [theme.breakpoints.down('sm')]: {
+           marginTop: '50px',
+       }
    },
    aboutImage: {
        opacity: 0.2
@@ -18,7 +21,9 @@ const useStyles = makeStyles(theme => ({
        marginTop: '20px',
        [theme.breakpoints.down('xs')]: {
             marginTop: '20px',
-       }
+       },
+       display: 'flex',
+       justifyContent: 'center'
    },
     aboutText: {
        position: 'absolute',
@@ -56,7 +61,7 @@ export default function AboutCard({img, title, text}) {
     return (
         <div>
             <Grid container className={classes.about}>
-                <Grid item className={classes.aboutItem}>
+                <Grid item xs={11} className={classes.aboutItem}>
                     <div className={classes.background}>
                         <Image
                             src={img}

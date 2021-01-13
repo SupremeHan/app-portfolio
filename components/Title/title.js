@@ -16,6 +16,12 @@ const useStyles = makeStyles(theme => ({
         animation: '1s ease 0.2s 1 normal forwards running $span',
         },
     },
+    headingText: {
+        padding: '0px 100px',
+        [theme.breakpoints.down('sm')]: {
+            padding: '0px 50px'
+        }
+    },
     delay: {
         animationDelay: '0.5s !important',
     },
@@ -29,12 +35,7 @@ const useStyles = makeStyles(theme => ({
             transform: 'translateY(0px)'
         }
     },
-    headingText: {
-        padding: '0px 100px',
-        [theme.breakpoints.down('sm')]: {
-            padding: '0px 50px'
-        }
-    }
+    
 }));
 
 

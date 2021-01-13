@@ -16,7 +16,9 @@ const useStyles = makeStyles(theme => ({
     },
     cardText: {
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        boxShadow: 'rgba(0, 0, 0, 0.75) 0px 5px 15px',
+        borderRadius: '5px'
     },
     cardImage: {
         display: 'flex',
@@ -38,13 +40,14 @@ const useStyles = makeStyles(theme => ({
         },
         [theme.breakpoints.down('xs')]: {
             background: 'transparent',
-            boxShadow: 'none'
+            boxShadow: 'none',
+            padding: '20px 0px'
         },
     },
     title: {
-        padding: '30px 20px',
+        padding: "15px 20px 30px 20px",
         [theme.breakpoints.down('md')]: {
-            padding: '10px 20px'
+            padding: '20px 20px'
         }
     },
     description: {
@@ -52,7 +55,10 @@ const useStyles = makeStyles(theme => ({
     },
     link: {
         textDecoration: 'underline',
-        paddingLeft: '20px'
+        paddingLeft: '20px',
+        "&:hover": {
+            cursor: 'pointer'
+        }
     },
     image: {
         maxWidth: '100%',

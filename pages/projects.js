@@ -6,25 +6,21 @@ import Subtitle from '../components/SubTitle/subtitle';
 export default function About() {
     return(
         <>
-        <Container maxWidth="lg">
             <Subtitle
                 heading="Projects"
-                subHeading="Some personal some done for other clients"
+                subHeading="Both personal and done for clients"
             />
-        </Container>
             <Project
                 title="Fitness App"
-                description={`Fitness platform created as a part of collage project.
-                 Get personalized training plans, track your wokrout progress, 
-                 stay in touch with the latets news and trends in fitness world`
+                description={`Full stack web application, created as a part of personal project. You can create an account, have personal training plan, track your progress, read fitness related articles.`
                 }
-                tehnologies={['Html','Css','React','NodeJS']}
+                tehnologies={['Html','Css','React','NodeJS', 'MySQL']}
                 img="/images/projects/fitnessApp.jpg"
                 link="https://github.com/SupremeHan/FitnessApp_Front_End"
             />
             <Project
                 title="Online Food Ordering"
-                description={`Website for ordering food online.`}
+                description={`Website for ordering food online. Done for college project in pure javascript.`}
                 tehnologies={['Html','Css','JavaScript']}
                 img="/images/projects/foodApp.jpg"
                 link="https://github.com/SupremeHan/Projekat-Brza-Hrana"
@@ -32,7 +28,7 @@ export default function About() {
             <Project
                 title="Movie Ticket App"
                 description={`Online booking application, reserve tickets, choose seats, and
-                be the first to watch all the best new movies`
+                be the first to watch all the best new movies.`
                 }
                 tehnologies={['ReactJs','NodeJS', 'MySQL']}
                 img="/images/projects/movieApp.jpg"

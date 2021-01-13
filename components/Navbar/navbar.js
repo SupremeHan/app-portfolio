@@ -32,7 +32,8 @@ const useStyles = makeStyles(theme => ({
     },
     list: {
         marginTop: '70px'
-    }
+    },
+    
 }));
 
 const Navbar = () => {
@@ -86,7 +87,9 @@ const Navbar = () => {
                     </IconButton>
                     <List className={classes.list}>
                         <Link href='/'>
-                            <ListItem button onClick={handleDrawerToggle}>
+                            <ListItem 
+                                className={classes.listItem}
+                                button onClick={handleDrawerToggle}>
                                 <ListItemText>
                                     index
                                 </ListItemText>

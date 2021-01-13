@@ -1,6 +1,11 @@
 import { Grid, makeStyles, Paper, Typography } from '@material-ui/core';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 const useStyles = makeStyles(theme => ({
     card: {
@@ -46,7 +51,7 @@ const useStyles = makeStyles(theme => ({
        
     },
     title: {
-        padding: "15px 20px 30px 20px",
+        padding: "15px 20px 20px 20px",
         [theme.breakpoints.down('md')]: {
             padding: '20px 20px'
         }
@@ -58,11 +63,25 @@ const useStyles = makeStyles(theme => ({
         maxWidth: '100%',
         height: 'auto',
         borderRadius: '5px'
+    },
+    ul: {
+        listStyle: 'none'
+    },
+    li: {
+        display: 'flex',
+        alignItems: 'center',
+        '& span': {
+            marginLeft: "10px",
+            '&:hover': {
+                textDecoration: 'underline',
+                cursor: 'pointer'
+            }
+        },
+        margin: '10px 0px'
     }
 }));
 
-
-const Card = ({title, description, img, link, list}) => {
+const Contact = () => {
     const classes = useStyles();
 
     return(
@@ -72,11 +91,20 @@ const Card = ({title, description, img, link, list}) => {
                     className={classes.cardText}
                 >
                     <Paper className={classes.paper}>
-                    <Typography variant="h2" className={classes.title}>{title}</Typography>
-                    <Typography variant="body2" className={classes.description}>{description}</Typography>
-                    <div>
-                        <p>{link}</p>
-                    </div>
+                    <Typography variant="h2" className={classes.title}>Get in touch</Typography>
+                    <Typography 
+                        variant="body2" 
+                        className={classes.description}>
+                            You can reach out to me on my social 
+                            media or you can just send me an email 
+                            whichever you prefer.
+                    </Typography>
+                    <ul className={classes.ul}>
+                        <Link href="https://github.com/SupremeHan"><li className={classes.li}><GitHubIcon fontSize='large'/><span>Github</span></li></Link>
+                        
+                        <Link href="https://www.linkedin.com/in/nikola-zivojinovic-a369341a0/"><li className={classes.li}><LinkedInIcon fontSize='large'/><span>LinkedIn</span></li></Link>
+                        <Link href="https://www.instagram.com/__th1rteen__/"><li className={classes.li}><InstagramIcon fontSize='large'/><span>Instagram</span></li></Link>
+                    </ul>
 
                     </Paper>
                 </Grid>
@@ -85,7 +113,7 @@ const Card = ({title, description, img, link, list}) => {
                     className={classes.cardImage}
                 >
                     <Image
-                        src={img}
+                        src='/images/contactus.jpg'
                         alt="Image"
                         width={500}
                         height={500}
@@ -96,4 +124,4 @@ const Card = ({title, description, img, link, list}) => {
     );
 };
 
-export default Card;
+export default Contact;
