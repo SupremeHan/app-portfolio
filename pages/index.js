@@ -28,8 +28,8 @@ export default function Home() {
             description={`
               I am using React with NextJs and Material-ui 
               as my main source of building applications and websites,
-               NodeJs for the back end, mySql for databases and Figma 
-               for the design process. You can check some of my stuff
+               NodeJs for the back end, MySQL for databases and Figma 
+               for the design process. You can check out some of my work
                 in the projects tab. 
             `}
             img="/images/mern.jpg"

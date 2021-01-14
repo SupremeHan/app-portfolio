@@ -16,8 +16,10 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         justifyContent: 'center',
         zIndex: 1,
-        boxShadow: 'rgba(0, 0, 0, 0.75) 0px 5px 15px',
-        borderRadius: '5px'
+        borderRadius: '5px',
+        [theme.breakpoints.down('sm')]: {
+            marginBottom: '20px'
+        }
     },
     cardImage: {
         display: 'flex',
@@ -30,6 +32,7 @@ const useStyles = makeStyles(theme => ({
         zIndex: 2,
         borderRadius: '5px',
         padding: '20px 30px',
+        boxShadow: 'rgba(0, 0, 0, 0.75) 0px 5px 15px',
         [theme.breakpoints.down('sm')]: {
             marginRight: '0px',
             marginBottom: '10px'
@@ -39,20 +42,24 @@ const useStyles = makeStyles(theme => ({
             maxWidth: '500px'
         },
         [theme.breakpoints.down('xs')]: {
-            background: 'transparent',
-            boxShadow: 'none',
             padding: '20px 0px'
         },
        
     },
     title: {
         padding: "15px 20px 30px 20px",
-        [theme.breakpoints.down('md')]: {
-            padding: '20px 20px'
-        }
+        [theme.breakpoints.up('md')]: {
+            padding: '20px 15px'
+        },
+        [theme.breakpoints.down('lg')]: {
+            padding: '10px 20px'
+        },
     },
     description: {
-        padding: '0px 20px'
+        padding: '0px 20px',
+        [theme.breakpoints.down('xs')]: {
+            padding: '10px 20px'
+        }
     },
     image: {
         maxWidth: '100%',
