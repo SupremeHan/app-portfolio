@@ -56,10 +56,7 @@ const useStyles = makeStyles(theme => ({
         },
     },
     description: {
-        padding: '0px 20px',
-        [theme.breakpoints.down('xs')]: {
-            padding: '10px 20px'
-        }
+        padding: '10px 20px',
     },
     image: {
         maxWidth: '100%',
@@ -96,6 +93,7 @@ const Card = ({title, description, img, link, list}) => {
                         alt="Image"
                         width={500}
                         height={500}
+                        objectFit="cover"
                         className={classes.image}
                     />    
                 </Grid>

@@ -105,7 +105,7 @@ const theme = createMuiTheme({
         fontSize: 30,
         color: '#7D83FF',
         '@media (max-width:600px)': {
-            fontSize: '26px',
+            fontSize: '22px',
         },
         '@media (min-width:601px)': {
             fontSize: '36px',
@@ -150,15 +150,15 @@ const theme = createMuiTheme({
             fontWeight: 400,
             fontSize: 24,
             lineHeight: 1.25,
-            '@media(max-width:768px)': {
-                fontSize: "22px"
+            '@media(max-width: 375px)': {
+                fontSize: "12px"
             },
-            '@media(max-width:600px)': {
+            '@media(min-width: 375px)': {
                 fontSize: "14px"
             },
-            '@media(max-width:375px)': {
-                fontSize: "12px"
-            }
+            '@media(min-width: 600px)': {
+                fontSize: "28px"
+            },
         },
     button: {
         color: PALETTE.text.primary

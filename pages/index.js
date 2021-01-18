@@ -7,6 +7,7 @@ import Title from '../components/Title/title'
 
 
 export default function Home() {
+  
   return (
     <div>
       <main>
@@ -17,8 +18,11 @@ export default function Home() {
             title="What i do"
             description={`
               Front end developer based in Belgrade, Serbia.
-              My story is not that long. I fell in love with programming when i was 18, and that hasn't change since.
-              When it comes to building stuff i mostly do websites and web apps, but i also started showing interestes towards mobile development.
+              I discovered web programming in college, 
+              and I've loved it ever since. When we talk 
+              about the things I do, there are mostly websites
+               and web applications but I am also interested in 
+               mobile development and UX/UI design.
 
             `}
             img="/images/desktop.jpg"
@@ -28,7 +32,7 @@ export default function Home() {
             description={`
               I am using React with NextJs and Material-ui 
               as my main source of building applications and websites,
-               NodeJs for the back end, MySQL for databases and Figma 
+               NodeJs for the back end, MySQL for database and Figma 
                for the design process. You can check out some of my work
                 in the projects tab. 
             `}

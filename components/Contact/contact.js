@@ -120,10 +120,11 @@ const Contact = () => {
                     className={classes.cardImage}
                 >
                     <Image
-                        src='/images/contactus.jpg'
+                        src='/images/about.jpg'
                         alt="Image"
                         width={500}
                         height={500}
+                        objectFit='cover'
                         className={classes.image}
                     />    
                 </Grid>

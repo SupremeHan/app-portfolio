@@ -1,10 +1,14 @@
 import React from 'react';
+import Head from 'next/head'
 import AboutCard from '../components/AboutCard/aboutCard';
 import Subtitle from '../components/SubTitle/subtitle';
 
 export default function About() {
     return(
         <>
+            <Head>
+                <title>About Me | Nikola Zivojinovic | Front End Developer</title>
+            </Head>
              <Subtitle
                 heading="Since your here"
                 subHeading="Learn something more about me"
@@ -26,7 +30,7 @@ export default function About() {
                     If you don’t find my sitting at my desk and 
                     yelling at my screen because my code won't work.
                      I’ll probably be at my local box throwing weights 
-                     aroud the gym. I also plan to compete so 
+                     around the gym. I also plan to compete so 
                      if you come to any local competitions you may find me there.
                 `}
                 img="/images/crossfit.jpg"

@@ -1,4 +1,4 @@
-import { AppBar, Drawer, IconButton, List, ListItem, ListItemText, makeStyles, Switch, Toolbar } from '@material-ui/core';
+import { AppBar, Drawer, IconButton, List, ListItem, ListItemText, makeStyles, Toolbar } from '@material-ui/core';
 import React, { useState } from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';

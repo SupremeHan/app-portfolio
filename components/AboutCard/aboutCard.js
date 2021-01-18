@@ -56,7 +56,7 @@ const useStyles = makeStyles(theme => ({
    },
 }));
 
-export default function AboutCard({img, title, text}) {
+const AboutCard = ({img, title, text}) => {
     const classes = useStyles();
     return (
         <div>
@@ -86,3 +86,5 @@ export default function AboutCard({img, title, text}) {
         </div>
     )
 }
+
+export default AboutCard;

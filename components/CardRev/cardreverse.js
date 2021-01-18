@@ -89,6 +89,7 @@ const CardRev = ({title, description, img}) => {
                         alt="Image"
                         width={500}
                         height={500}
+                        objectFit="cover"
                         className={classes.image}
                     />    
                 </Grid>

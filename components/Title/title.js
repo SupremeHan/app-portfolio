@@ -4,7 +4,13 @@ import React from 'react';
 const useStyles = makeStyles(theme => ({
     title: {
         height: '100vh',
-        maxWidth: '960px',
+        background: 'url(/images/purpleB.png)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: '700px',
+        backgroundPosition: '80% 25%',
+        [theme.breakpoints.down('xs')]: {
+            background: 'none'
+        }
     },
     heading: {
         position: 'relative',
