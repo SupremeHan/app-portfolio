@@ -1,11 +1,14 @@
-import { Container } from '@material-ui/core';
 import React from 'react';
+import Head from 'next/head';
 import Project from '../components/Project/project';
 import Subtitle from '../components/SubTitle/subtitle';
 
 export default function About() {
     return(
         <>
+             <Head>
+                <title>Projects | Nikola Zivojinovic | Front End Developer</title>
+            </Head>
             <Subtitle
                 heading="Projects"
                 subHeading="Both personal and done for clients"
