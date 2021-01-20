@@ -26,12 +26,11 @@ export default function About() {
             <AboutCard
                 title="Lifting Stuff"
                 text={`
-                    I also do Crossfit on the regular basis. 
-                    If you don’t find my sitting at my desk and 
-                    yelling at my screen because my code won't work.
-                     I’ll probably be at my local box throwing weights 
-                     around the gym. I also plan to compete so 
-                     if you come to any local competitions you may find me there.
+                    I also do crossfit. If you don't find me at my desk,
+                     yelling at my screen because my code won't work.
+                      I'll probably be at my box throwing weights around.
+                       I also plan to compete, so if you come to any
+                        local competition you may find me there.
                 `}
                 img="/images/crossfit.jpg"
             />
