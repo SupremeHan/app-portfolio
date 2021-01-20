@@ -16,10 +16,13 @@ export default function About() {
             <AboutCard
                 title="Shot taker"
                 text={`
-                    Besiedes programming i also have some other 
-                    interestes, such as photography and videography.
-                    I love taking photos and recording stuff ever since i was a kid.
-                    I also have some intermediate knowledge of Adobe Premier and Adobe Lightroom.
+                    Besides programming, 
+                    i also have some other interests, 
+                    such as photography and videography. 
+                    I love taking photos and recording stuff 
+                    ever since i was a kid. I also have some 
+                    intermediate knowledge of Adobe Premiere 
+                    and Adobe Lightroom.
                 `}
                 img="/images/photo.jpg"
             />
