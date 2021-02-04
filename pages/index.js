@@ -1,4 +1,5 @@
 import { Container } from '@material-ui/core'
+import Head from 'next/head'
 import Card from '../components/Card/card'
 import CardRev from '../components/CardRev/cardreverse'
 import Contact from '../components/Contact/contact'
@@ -11,6 +12,9 @@ export default function Home() {
   return (
     <div>
       <main>
+         <Head>
+                <title>Nikola Zivojinovic | Front End Developer</title>
+        </Head>
         <Container maxWidth="lg">
           <Title/>
           <Mouse/>
@@ -25,7 +29,7 @@ export default function Home() {
                mobile development and UX/UI design.
 
             `}
-            img="/images/desktop.jpg"
+            img="/images/code.jpg"
           />
           <CardRev
             title="Tehnologies"

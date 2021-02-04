@@ -18,11 +18,10 @@ export default class MyDocument extends Document {
             rel="preload"
             href="/fonts/Metropolis-Black.otf"
             as="font"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           />
           <link rel="preconnect" href="https://fonts.gstatic.com"/>
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet"/>
-          <title>Nikola Zivojinovic | Front End Developer</title>
         </Head>
         <body>
           <Main />
