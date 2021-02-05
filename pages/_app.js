@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -7,6 +7,8 @@ import light from '../utils/light';
 import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
 import { makeStyles, Switch } from '@material-ui/core';
+import * as gtag from '../utils/gtag';
+import { useRouter } from 'next/router';
 
 
 const useStyles = makeStyles(theme => ({
@@ -24,14 +26,25 @@ export default function MyApp(props) {
   const { Component, pageProps } = props;
   const [darkMode, setDarkMode] = useState(true);
   const classes = useStyles();
+  const router = useRouter();
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
   }, []);
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <React.Fragment >
