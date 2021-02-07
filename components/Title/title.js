@@ -4,7 +4,7 @@ import React from 'react';
 const useStyles = makeStyles(theme => ({
     title: {
         height: '100vh',
-        background: 'url(/images/purpleB.png)',
+        background: 'url(/images/landing.svg)',
         backgroundRepeat: 'no-repeat',
         backgroundSize: '700px',
         backgroundPosition: '80% 25%',

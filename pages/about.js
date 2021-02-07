@@ -10,7 +10,7 @@ export default function About() {
                 <title>About Me | Nikola Zivojinovic | Front End Developer</title>
             </Head>
              <Subtitle
-                heading="Since your here"
+                heading="Since you're here"
                 subHeading="Learn something more about me"
             />
             <AboutCard
@@ -29,9 +29,8 @@ export default function About() {
             <AboutCard
                 title="Lifting Stuff"
                 text={`
-                    I also do crossfit. If you don't find me at my desk,
-                     yelling at my screen because my code won't work.
-                      I'll probably be at my box throwing weights around.
+                    I also do crossfit. If you don't find me at my desk flexing my brain, 
+                    then I'll probably be at my box throwing weights around.
                        I also plan to compete, so if you come to any
                         local competition you may find me there.
                 `}

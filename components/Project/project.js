@@ -1,7 +1,8 @@
-import { Grid, makeStyles, Paper, Typography } from '@material-ui/core';
+import { Grid, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles(theme => ({
     project: {
@@ -78,7 +79,13 @@ const useStyles = makeStyles(theme => ({
             cursor: 'pointer'
         }
     },
-    
+    gitWrap: {
+        display: 'flex',
+        alignItems: 'center'
+    },
+    github: {
+        marginLeft: '20px'
+    }
 }));
 
 const Project = ({title, description, tehnologies, img, link}) => {
@@ -102,14 +109,13 @@ const Project = ({title, description, tehnologies, img, link}) => {
                         Tehnologies
                     </Typography>
                     <Link href={link}>
-                    <Image
-                        src="/images/git.png"
-                        alt="GitCat"
-                        width={70}
-                        height={30}
-                        objectFit="fill"
-                        className={classes.link}
-                    />
+                    <div className={classes.gitWrap}>
+                        <GitHubIcon
+                            className={classes.github}
+                            fontSize="large"
+                        />
+                    </div>
+                    
                     </Link>
                      </div>
                     <Typography variant="body2">

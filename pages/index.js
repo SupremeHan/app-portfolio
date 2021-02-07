@@ -21,7 +21,7 @@ export default function Home() {
           <Card
             title="What i do"
             description={`
-              Front end developer based in Belgrade, Serbia.
+              Front-end developer based in Belgrade, Serbia.
               I discovered web programming in college, 
               and I've loved it ever since. When we talk 
               about the things I do, there are mostly websites
@@ -34,11 +34,11 @@ export default function Home() {
           <CardRev
             title="Tehnologies"
             description={`
-              I am using React with NextJs and Material-ui 
-              as my main source of building applications and websites,
-               NodeJs for the back end, MySQL for database and Figma 
-               for the design process. You can check out some of my work
-                in the projects tab. 
+              I am using React with Next.js and Material-UI as my main
+              source for building applications and websites, 
+              Node.js for the back-end,
+              MySQL for database and Figma for the design process. 
+              You can check out some of my work in the project tab.
             `}
             img="/images/mern.jpg"
           />

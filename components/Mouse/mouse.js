@@ -1,6 +1,7 @@
-import { makeStyles } from '@material-ui/core'
+import { Hidden, makeStyles } from '@material-ui/core'
 import React from 'react';
 import MouseIcon from '@material-ui/icons/Mouse';
+import TouchAppIcon from '@material-ui/icons/TouchApp';
 
 const useStyles = makeStyles(theme => ({
   wrapper: {
@@ -34,7 +35,12 @@ export default function Mouse() {
     const classes = useStyles();
     return (
         <div className={classes.wrapper}>
-            <MouseIcon className={classes.floater} fontSize='large'/>
+            <Hidden smDown>
+                <MouseIcon className={classes.floater} fontSize='large'/>
+            </Hidden>
+            <Hidden mdUp>
+                <TouchAppIcon className={classes.floater} fontSize='large'/>
+            </Hidden>
         </div>
     )
 }
