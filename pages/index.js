@@ -19,7 +19,7 @@ export default function Home() {
           <Title/>
           <Mouse/>
           <Card
-            title="What i do"
+            title="What I do"
             description={`
               Front-end developer based in Belgrade, Serbia.
               I discovered web programming in college, 
