@@ -81,10 +81,14 @@ const useStyles = makeStyles(theme => ({
     },
     gitWrap: {
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        '& :hover': {
+            cursor: 'pointer'
+        }
     },
     github: {
-        marginLeft: '20px'
+        marginLeft: '20px',
+        
     }
 }));
 

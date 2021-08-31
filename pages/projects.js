@@ -19,7 +19,7 @@ export default function About() {
                 }
                 tehnologies={['Html','Css','React','NodeJS', 'MySQL']}
                 img="/images/projects/fitnessApp.png"
-                link="https://github.com/SupremeHan/FitnessApp_Front_End"
+                link="https://github.com/SupremeHan/fitnessApp-frontend"
             />
             <Project
                 title="Online Food Ordering"
@@ -35,7 +35,7 @@ export default function About() {
                 }
                 tehnologies={['ReactJs','NodeJS', 'MySQL']}
                 img="/images/projects/movieApp.png"
-                link="https://github.com/SupremeHan/FitnessApp_Front_End"
+                link="https://github.com/SupremeHan/PIIV-FrontEnd"
             />
             <Project
                 title="Dar Mar Catering"

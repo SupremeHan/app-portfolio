@@ -1,6 +1,7 @@
 import { Grid, makeStyles, Paper, Typography } from '@material-ui/core';
 import React from 'react';
 import Image from 'next/image';
+import { bounce } from 'react-animations'
 
 const useStyles = makeStyles(theme => ({
     card: {
