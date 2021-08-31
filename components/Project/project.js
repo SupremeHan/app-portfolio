@@ -83,7 +83,8 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         alignItems: 'center',
         '& :hover': {
-            cursor: 'pointer'
+            cursor: 'pointer',
+            color: '#7D83FF'
         }
     },
     github: {
