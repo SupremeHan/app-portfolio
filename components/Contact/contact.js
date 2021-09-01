@@ -65,6 +65,9 @@ const useStyles = makeStyles(theme => ({
         padding: '0px 20px',
         [theme.breakpoints.down('xs')]: {
             padding: '10px 20px'
+        },
+        '& a': {
+            color: '#CFC9D7'
         }
     },
     image: {
@@ -104,7 +107,7 @@ const Contact = () => {
                         variant="body2" 
                         className={classes.description}>
                            Reach out to me on social media, or you can
-                           just send me an email to zivojinovicn13@gmail.com
+                           just send me an email to <a href="mailto:zivojinovicn13@gmail.com">zivojinovicn13@gmail.com</a>
                     </Typography>
                     <ul className={classes.ul}>
                         <Link href="https://github.com/SupremeHan"><li className={classes.li}><GitHubIcon fontSize='large'/><span>Github</span></li></Link>
