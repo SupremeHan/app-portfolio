@@ -109,7 +109,7 @@ const Contact = () => {
                     <ul className={classes.ul}>
                         <Link href="https://github.com/SupremeHan"><li className={classes.li}><GitHubIcon fontSize='large'/><span>Github</span></li></Link>
                         
-                        <Link href="https://www.linkedin.com/in/nikola-zivojinovic-a369341a0/"><li className={classes.li}><LinkedInIcon fontSize='large'/><span>LinkedIn</span></li></Link>
+                        <Link href="https://www.linkedin.com/in/nikola-%C5%BEivojinovi%C4%87-a369341a0/"><li className={classes.li}><LinkedInIcon fontSize='large'/><span>LinkedIn</span></li></Link>
                         <Link href="https://www.instagram.com/__th1rteen__/"><li className={classes.li}><InstagramIcon fontSize='large'/><span>Instagram</span></li></Link>
                     </ul>
 
