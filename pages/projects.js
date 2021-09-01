@@ -13,6 +13,7 @@ export default function About() {
                 heading="Projects"
                 subHeading="Both personal and done for clients"
             />
+            
             <Project
                 title="Fitness App"
                 description={`Full stack web application, created as a part of personal project. You can create an account, have personal training plan, track your progress, read fitness related articles.`
@@ -20,6 +21,13 @@ export default function About() {
                 tehnologies={['Html','Css','React','NodeJS', 'MySQL']}
                 img="/images/projects/fitnessApp.png"
                 link="https://github.com/SupremeHan/fitnessApp-frontend"
+            />
+            <Project
+                title='Requirements Model'
+                description={`Application based on PowerDesigner requirements model. Create and menage multiple projects and teams. Convert your class and use-case diagrams to java classes.`}
+                tehnologies={['React, Java, MongoDB']}
+                img="/images/projects/rqmApp.png"
+                link="https://github.com/SupremeHan/rqm_app"
             />
             <Project
                 title="Online Food Ordering"
