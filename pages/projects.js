@@ -24,7 +24,7 @@ export default function About() {
             />
             <Project
                 title='Requirements Model'
-                description={`Application based on PowerDesigner requirements model. Create and menage multiple projects and teams. Convert your class and use-case diagrams to java classes.`}
+                description={`Application based on PowerDesigner requirements model. Create and menage multiple projects and teams. Convert your class diagrams to java classes.`}
                 tehnologies={['React, Java, MongoDB']}
                 img="/images/projects/rqmApp.png"
                 link="https://github.com/SupremeHan/rqm_app"
